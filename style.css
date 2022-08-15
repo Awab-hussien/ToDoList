@@ -1,0 +1,117 @@
+*,
+::after
+,::before{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    min-height:100vh;
+    height: 100%;
+    background: linear-gradient(
+        150deg,rgb(235, 44, 177),rgb(127, 67, 238)
+    );
+
+}
+
+.container{
+    /* position: absolute; */
+    width:40%;
+    min-width: 460px;
+    /* transform:translate(-50%,-50%);
+    top:50%;
+    left:50%; */
+    margin:10px auto;
+    border:2px solid white;
+    padding:40px 30px;
+   
+}
+
+#newtask{
+    background: #ffff;
+    padding:30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#task{
+    padding:18px 20px;
+    width:70%;
+    font-family: 'Segoe UI', Roboto, Oxygen;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid rgb(241, 234, 240);
+    border-radius: 5px;
+    
+}
+#task:focus{
+    outline: none;
+    border-color: blueviolet;
+}
+#add{
+  background: blueviolet;
+  font-size: 16px;
+  padding: 20px 30px;
+  float: right;
+  position: relative;
+  border: none;
+  border: 5px;
+  font-weight: 16px;
+  border-radius: 5px;
+  width:20%;
+  color:white;
+  cursor: pointer;
+}
+
+#tasks{
+    background: #ffff;
+    margin-top:30px;
+    box-shadow:0 5px 15px rgb(0,0,0,0.3);
+    position: relative;
+    width:100%;
+    padding:30px 20px;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+    margin-top:10px;
+    width:100%;
+    border-radius: 5px;
+}
+ul li{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(226, 126, 226);
+}
+.taskname{
+
+ width:70%;
+
+ padding:5px 10px;
+ margin-top:5px;
+ font-size: 20px;
+ font-family:Tahoma, sans-serif;
+ font-weight: 500;
+ 
+}
+.taskdelete{
+ width:20%;  
+ padding:15px 20px;
+ margin-top:5px;
+ background: blueviolet;
+ font-size: 16px;
+ padding: 20px 30px;
+ border: none;
+ font-weight: 16px;
+ border-radius: 5px;
+ width:20%;
+ color:white;
+ cursor: pointer;
+
+}
+.line{
+    text-decoration: line-through;
+}
